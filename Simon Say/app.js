@@ -63,6 +63,8 @@ function checkAns(idx){
     }
     else{
         let h2 = document.querySelector("h2");
+        const sound = document.getElementById("gameOverSound");
+        sound.play();
         h2.innerHTML = `Game Over !! Your Score was <b>${level}</b>. <br>
         Press PlayAgain to replay the game`;
         document.querySelector("body").style.backgroundColor="red";
@@ -70,6 +72,8 @@ function checkAns(idx){
              document.querySelector("body").style.backgroundColor="#819ff9";
         },200)
         console.log("Game over");
+        
+
         reset();
     }
 }
