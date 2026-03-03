@@ -1,0 +1,31 @@
+body{
+    text-align:center;
+    background-color:#819ff9;
+}
+
+#game{
+ display: grid;
+ grid-template-columns: repeat(3,100px);
+ justify-content: center;
+ gap: 10px;
+ 
+
+}
+
+.hole{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 10px;
+}
+
+.mole{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: brown;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
